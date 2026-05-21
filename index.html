@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheetah Broadband | Client Portal</title>
+    
+    <link rel="icon" href="assets/wifi-icon.png" type="image/png">
+    
+    <!-- Modern Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Material Symbols (Icons) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+        <div class="header-content">
+            <span class="material-symbols-rounded header-icon">wifi</span>
+            <h1>Cheetah Broadband</h1>
+            <p>Client Support Portal</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- MAIN MENU -->
+        <div id="mainMenu" class="menu-grid">
+            
+            <button class="menu-btn" onclick="showSection('enroll')">
+                <div class="btn-left">
+                    <span class="material-symbols-rounded icon-blue">receipt_long</span>
+                    <span class="btn-text">How to enroll in Online Billing</span>
+                </div>
+                <span class="material-symbols-rounded arrow">chevron_right</span>
+            </button>
+            
+            <button class="menu-btn" onclick="showSection('esoa')">
+                <div class="btn-left">
+                    <span class="material-symbols-rounded icon-blue">calculate</span>
+                    <span class="btn-text">How to compute your E-SOA</span>
+                </div>
+                <span class="material-symbols-rounded arrow">chevron_right</span>
+            </button>
+            
+            <button class="menu-btn" onclick="showSection('bayad')">
+                <div class="btn-left">
+                    <span class="material-symbols-rounded icon-blue">account_balance_wallet</span>
+                    <span class="btn-text">Payment Channels</span>
+                </div>
+                <span class="material-symbols-rounded arrow">chevron_right</span>
+            </button>
+            
+            <button class="menu-btn" onclick="showSection('wifi')">
+                <div class="btn-left">
+                    <span class="material-symbols-rounded icon-blue">wifi_password</span>
+                    <span class="btn-text">Change WiFi Password</span>
+                </div>
+                <span class="material-symbols-rounded arrow">chevron_right</span>
+            </button>
+            
+            <button class="menu-btn" onclick="showSection('report')">
+                <div class="btn-left">
+                    <span class="material-symbols-rounded icon-blue">support_agent</span>
+                    <span class="btn-text">Report an Issue</span>
+                </div>
+                <span class="material-symbols-rounded arrow">chevron_right</span>
+            </button>
+            
+            <button class="menu-btn" onclick="showSection('opisina')">
+                <div class="btn-left">
+                    <span class="material-symbols-rounded icon-blue">storefront</span>
+                    <span class="btn-text">List of Branches</span>
+                </div>
+                <span class="material-symbols-rounded arrow">chevron_right</span>
+            </button>
+            
+            <button class="menu-btn terms" onclick="showSection('terms')">
+                <div class="btn-left">
+                    <span class="material-symbols-rounded icon-gray">policy</span>
+                    <span class="btn-text">Terms and Conditions</span>
+                </div>
+                <span class="material-symbols-rounded arrow">chevron_right</span>
+            </button>
+
+        </div>
+
+        <!-- SECTIONS -->
+        
+<div id="enroll" class="content-section">
+            <button class="back-btn" onclick="goBack()">
+                <span class="material-symbols-rounded">arrow_back</span> Back to Menu
+            </button>
+            <h2>Online Billing Enrollment</h2>
+            
+            <div class="card">
+                <h3 style="color: #ea580c; font-size: 16px; margin-bottom: 8px;">Ano ang E-SOA?</h3>
+                <p style="margin-bottom: 0;">Ang <strong>E-SOA (Electronic Statement of Account)</strong> ay ang digital version ng iyong monthly bill. Imbes na papel na iniiwan sa gate, direktang ise-send ang bill mo sa iyong email. Mas mabilis, secured, at eco-friendly!</p>
+            </div>
+
+            <p>Para manually ma-register ang inyong account para sa E-SOA, i-click ang link sa ibaba at sundin ang steps:</p>
+            
+            <a href="https://support.cheetah.com.ph/hc/en-us/requests/new" target="_blank" class="submit-btn" style="text-decoration: none; display: inline-flex; width: 100%; margin: 15px 0;">
+                <span class="material-symbols-rounded">open_in_new</span> Pumunta sa Request Page
+            </a>
+
+            <div class="card">
+                <ol class="custom-list">
+                    <li>Sa dropdown menu, piliin ang <strong>“Online eSOA Application.”</strong></li>
+                    <li>Ilagay ang iyong active <strong>email address</strong>.</li>
+                    <li>I-enter ang iyong <strong>contact number</strong>.</li>
+                    <li>Ilagay ang <strong>Customer Name</strong> na registered sa account.</li>
+                    <li>I-enter ang iyong Cheetah <strong>Account Number</strong>.</li>
+                    <li>Sa Subject at Description, i-type: <strong>Online eSOA Application</strong></li>
+                    <li>Pwedeng i-blank na lang ang Attachments.</li>
+                    <li>I-click ang <strong>Submit</strong> button.</li>
+                </ol>
+                <p style="font-size: 13px; color: #ea580c; margin-top: 15px; margin-bottom: 0; font-weight: 500;">
+                    <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: middle;">check_circle</span> 
+                    Hintayin ang confirmation email mula sa support team once successfully enrolled ka na!
+                </p>
+            </div>
+
+            <p style="font-size: 14px; font-weight: 600; margin-top: 20px;">Visual Guide:</p>
+            <img src="assets/enroll-guide.png" alt="How to enroll to E-SOA" class="placeholder-img">
+        </div>
+
+        <div id="esoa" class="content-section">
+            <button class="back-btn" onclick="goBack()">
+                <span class="material-symbols-rounded">arrow_back</span> Back to Menu
+            </button>
+            <h2>E-SOA Computation</h2>
+            
+            <div class="card" style="border: 2px solid #f97316; background: #ffffff;">
+                <h3 style="color: #c2410c; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                    <span class="material-symbols-rounded">calculate</span> Unang Bill Estimator
+                </h3>
+                <div class="modern-form" style="gap: 10px;">
+                    <select id="planSelect" style="padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: 'Poppins', sans-serif; outline: none; width: 100%; background: #f8fafc;">
+                        <option value="" disabled selected>Piliin ang Plan mo</option>
+                        <optgroup label="Residential">
+                            <option value="699">CV-699 (₱699)</option>
+                            <option value="999">CV-999 (₱999)</option>
+                            <option value="1250">C-HOME 1.25F (₱1250)</option>
+                            <option value="1500">C-HOME 1.5F (₱1500)</option>
+                            <option value="2500">C-HOME 2.5F (₱2500)</option>
+                            <option value="4000">C-HOME 4F (₱4000)</option>
+                        </optgroup>
+                        <optgroup label="Biz">
+                            <option value="1500">BIZ LITE (₱1500)</option>
+                            <option value="3000">BIZ 3 (₱3000)</option>
+                            <option value="6000">BIZ 6 (₱6000)</option>
+                        </optgroup>
+                    </select>
+                    
+                    <input type="date" id="installDate" style="padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: 'Poppins', sans-serif; outline: none; width: 100%; background: #f8fafc; color: #475569;">
+                    <div style="font-size: 11px; color: #64748b; margin-top: -5px; padding-left: 5px;">*Piliin ang eksaktong petsa kung kailan kinabitan.</div>
+                    
+                    <button onclick="computeBill()" class="submit-btn" style="padding: 12px; margin-top: 5px;">I-compute ang Estimate</button>
+                </div>
+                
+                <div id="calcResult" style="margin-top: 15px; padding: 15px; background: #fff7ed; border-radius: 8px; text-align: center; display: none; border: 1px dashed #fdba74;">
+                    </div>
+            </div>
+
+<div class="card warning-card" style="border-left-color: #f97316; background: #fff7ed;">
+                <p style="margin: 0; color: #c2410c;"><strong>Ano ba ang Pro-rated Bill?</strong><br>
+                Sa first bill mo, hindi agad buong monthly fee ang babayaran. Naka-base lang ito sa number of days na nagamit mo yung internet—mula sa date na na-installan ka hanggang sa end of the month.</p>
+            </div>
+
+            <p style="font-weight: 600; margin-bottom: 10px; font-size: 15px;">Formula ng Computation:</p>
+            <div style="background: #f1f5f9; padding: 15px; border-radius: 12px; text-align: center; font-family: monospace; font-size: 14px; margin-bottom: 25px; border: 1px solid #e2e8f0; color: #334155;">
+                (Plan Amount ÷ 30) × Days Used
+            </div>
+
+            <h3 style="font-size: 18px; color: #1e3a8a; margin-top: 20px; margin-bottom: 10px;">Billing Cycle & Due Dates</h3>
+            <p style="font-size: 13px; color: #475569; margin-bottom: 15px;">Depende ang billing schedule sa kung anong date na-activate ang connection mo. Check the scenarios below (for example, <span class="dyn-m0" style="font-weight: 600; color: #c2410c;"></span> ka kinabitan):</p>
+
+            <div class="card" style="margin-bottom: 15px;">
+                <h4 style="color: #c2410c; margin-bottom: 12px; font-size: 15px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle; font-size: 18px;">calendar_today</span> 
+                    Option A: Nakabitan between 1st to 15th
+                </h4>
+                <ul class="custom-list">
+                    <li><strong>Bill Generation:</strong> <span class="dyn-m0"></span> 15</li>
+                    <li><strong>Email ng e-SOA:</strong> <span class="dyn-m0"></span> 17 to 20</li>
+                    <li><strong>Due Date:</strong> <span class="dyn-m0-end" style="font-weight: 600;"></span></li>
+                    <li><strong>Grace Period (Online Pay):</strong> <span class="dyn-m1"></span> 10</li>
+                    <li><strong>Grace Period (Office Pay):</strong> <span class="dyn-m1"></span> 14</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4 style="color: #c2410c; margin-bottom: 12px; font-size: 15px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle; font-size: 18px;">event_upcoming</span> 
+                    Option B: Nakabitan between 16th to end of month
+                </h4>
+                <p style="font-size: 12.5px; color: #475569; margin-bottom: 10px;">
+                    <em><strong>Note:</strong> Since lagpas 15th na, next month na ipapadala ang first bill mo. Pero take note na kasama na rito yung pro-rated amount ng <span class="dyn-m0" style="font-weight: 600;"></span> PLUS yung buong monthly plan para sa <span class="dyn-m1" style="font-weight: 600;"></span>. Kaya asahan na medyo mataas ang unang bill.</em>
+                </p>
+                <ul class="custom-list">
+                    <li><strong>Bill Generation:</strong> <span class="dyn-m1"></span> 15</li>
+                    <li><strong>Email ng e-SOA:</strong> <span class="dyn-m1"></span> 17 to 20</li>
+                    <li><strong>Due Date:</strong> <span class="dyn-m1-end" style="font-weight: 600;"></span></li>
+                    <li><strong>Grace Period (Online Pay):</strong> <span class="dyn-m2"></span> 10</li>
+                    <li><strong>Grace Period (Office Pay):</strong> <span class="dyn-m2"></span> 14</li>
+                </ul>
+            </div>
+
+            <h3 style="font-size: 18px; color: #1e3a8a; margin-top: 30px; margin-bottom: 10px;">Possible Additional Charges</h3>
+            <p style="font-size: 13px; color: #475569; margin-bottom: 15px;">Magkakaroon lang nito kapag sumobra sa free allocation ng kable during installation. Idadagdag ang excess materials sa first bill, at pwede itong bayaran within 2 months.</p>
+            
+            <div class="card">
+                <p style="font-weight: 600; margin-bottom: 8px; color: #334155;">Outdoor Fiber:</p>
+                <ul class="custom-list" style="margin-bottom: 15px;">
+                    <li>Free up to 120 meters</li>
+                    <li>200 meters – ₱700</li>
+                    <li>300 meters – ₱1,000</li>
+                </ul>
+                
+                <p style="font-weight: 600; margin-bottom: 8px; color: #334155;">Indoor Fiber:</p>
+                <ul class="custom-list" style="margin-bottom: 15px;">
+                    <li>Free up to 15 meters</li>
+                    <li>₱10 per meter kapag sumobra</li>
+                </ul>
+                
+                <div style="background: #f1f5f9; padding: 12px; border-radius: 8px; font-size: 12px; margin-top: 15px; border: 1px solid #cbd5e1;">
+                    <span class="material-symbols-rounded" style="font-size: 18px; vertical-align: middle; color: #64748b;">info</span>
+                    <strong>Quick Reminder:</strong> Kailangang maibalik in good condition ang mga materials kapag nagpa-disconnect para iwas extra penalty charges!
+                </div>
+            </div>
+        </div>
+
+        <div id="bayad" class="content-section">
+            <button class="back-btn" onclick="goBack()">
+                <span class="material-symbols-rounded">arrow_back</span> Back to Menu
+            </button>
+            <h2>Payment Channels</h2>
+            <p style="font-size: 14px; color: #475569; margin-bottom: 15px;">Saan ang location mo? Piliin sa ibaba para makita ang tamang payment details:</p>
+
+            <div class="modern-form" style="margin-bottom: 20px;">
+                <select id="locationSelect" onchange="showPaymentGuide()" style="padding: 14px; border: 1px solid #cbd5e1; border-radius: 12px; font-family: 'Poppins', sans-serif; outline: none; width: 100%; background: #f8fafc; color: #334155; font-size: 15px; cursor: pointer;">
+                    <option value="" disabled selected>-- Piliin ang iyong bayan/siyudad --</option>
+                    <option value="skyline">Angono</option>
+                    <option value="kabayan">Antipolo</option>
+                    <option value="skyline">Baras</option>
+                    <option value="bctv">Binangonan</option>
+                    <option value="skyline">Cardona</option>
+                    <option value="skyline">Jala-Jala</option>
+                    <option value="skyline">Morong</option>
+                    <option value="skyline">Pililla</option>
+                    <option value="skyline">Tanay</option>
+                    <option value="kabayan">Taytay</option>
+                    <option value="skyline">Teresa</option>
+                </select>
+            </div>
+
+            <div id="payment-skyline" class="card" style="display: none; border: 2px solid #f97316; background: #fff7ed;">
+                <h3 style="color: #c2410c; margin-bottom: 10px; font-size: 16px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle;">account_balance_wallet</span> Skyline CATV 
+                </h3>
+                <p style="font-size: 12px; color: #475569;">Ito ang payment guide para sa iyong area:</p>
+                <img src="assets/skyline-payment.png" alt="Skyline Payment Channels" class="placeholder-img" style="margin-top: 10px;">
+            </div>
+
+            <div id="payment-bctv" class="card" style="display: none; border: 2px solid #f97316; background: #fff7ed;">
+                <h3 style="color: #c2410c; margin-bottom: 10px; font-size: 16px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle;">account_balance_wallet</span> BCTV
+                </h3>
+                <p style="font-size: 12px; color: #475569;">Ito ang payment guide para sa iyong area:</p>
+                <img src="assets/bctv-payment.png" alt="BCTV Payment Channels" class="placeholder-img" style="margin-top: 10px;">
+            </div>
+
+            <div id="payment-kabayan" class="card" style="display: none; border: 2px solid #f97316; background: #fff7ed;">
+                <h3 style="color: #c2410c; margin-bottom: 10px; font-size: 16px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle;">account_balance_wallet</span> Kabayan Cable 
+                </h3>
+                <p style="font-size: 12px; color: #475569;">Ito ang payment guide para sa iyong area:</p>
+                <img src="assets/kabayan-payment.png" alt="Kabayan Payment Channels" class="placeholder-img" style="margin-top: 10px;">
+            </div>
+        </div>
+
+<div id="wifi" class="content-section">
+            <button class="back-btn" onclick="goBack()">
+                <span class="material-symbols-rounded">arrow_back</span> Back to Menu
+            </button>
+            <h2>Paano Palitan ang WiFi Password</h2>
+            <p style="font-size: 14px; color: #475569;">Simple at mabilis lang 'to. Sundin lang ang step-by-step guide sa ibaba gamit ang cellphone o laptop mo.</p>
+
+            <div class="card warning-card" style="border-left-color: #3b82f6; background: #eff6ff; margin-bottom: 25px;">
+                <p style="margin-bottom: 8px; color: #1e3a8a; font-weight: 600;">Ano ang Default Details mo?</p>
+                <p style="font-size: 13px; color: #334155; margin-bottom: 12px;">Bago magsimula, tingnan ang sticker sa ilalim o likod ng router mo para malaman kung alin dito ang gagamitin mo sa Step 1 at 2:</p>
+                
+                <div style="background: white; padding: 12px; border-radius: 10px; border: 1px solid #bfdbfe; margin-bottom: 10px;">
+                    <strong style="color: #2563eb; font-size: 14px;">Para sa HG8245H / HG8247H</strong>
+                    <ul style="list-style: none; padding-left: 0; font-size: 13px; color: #475569; margin-top: 5px; line-height: 1.5;">
+                        <li><strong>IP Address:</strong> 192.168.100.1</li>
+                        <li><strong>Username:</strong> root</li>
+                        <li><strong>Password:</strong> admin</li>
+                    </ul>
+                </div>
+                
+<div style="background: white; padding: 12px; border-radius: 10px; border: 1px solid #bfdbfe;">
+                    <strong style="color: #2563eb; font-size: 14px;">Para sa EG8245H / EG8247H / EG8145V5</strong>
+                    <ul style="list-style: none; padding-left: 0; font-size: 13px; color: #475569; margin-top: 5px; line-height: 1.5;">
+                        <li><strong>IP Address:</strong> 192.168.18.1 (o kaya 192.168.100.1)</li>
+                        <li><strong>Username:</strong> Epuser (o kaya root)</li>
+                        <li><strong>Password:</strong> userEp (o kaya admin, o adminHW)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 15px; margin-bottom: 25px;">
+                <h4 style="color: #334155; font-size: 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 6px;">
+                    <span class="material-symbols-rounded" style="color: #3b82f6; font-size: 20px;">network_wifi</span>
+                    Ano ang pinagkaiba ng 2.4G at 5G WiFi?
+                </h4>
+                <p style="font-size: 13px; color: #475569; margin-bottom: 12px;">Sa mga bagong modem, mapapansin mo na dalawa ang pangalan ng WiFi mo. Ito ang guide kung kailan mo sila dapat gamitin:</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="background: white; padding: 10px; border-radius: 8px; border-left: 3px solid #ea580c; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                        <strong style="font-size: 13px; color: #c2410c;">2.4G (Para sa Malayo)</strong>
+                        <p style="font-size: 12px; margin: 4px 0 0 0; color: #64748b;">Medyo mas mabagal ang speed, pero nakakalusot sa makakapal na pader. Gamitin ito kung malayo ka sa router (ex. nasa 2nd floor ka o nasa labas ng kwarto).</p>
+                    </div>
+                    
+                    <div style="background: white; padding: 10px; border-radius: 8px; border-left: 3px solid #3b82f6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                        <strong style="font-size: 13px; color: #1e3a8a;">5G (Para sa Mabilis)</strong>
+                        <p style="font-size: 12px; margin: 4px 0 0 0; color: #64748b;">Sobrang bilis ng internet speed, pero maikli lang ang range. Gamitin ito kung malapit ka lang sa router at naglalaro ka o nanonood ng Netflix.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="font-size: 16px; color: #c2410c; margin-top: 25px; margin-bottom: 15px;">Magsimula rito:</h3>
+            
+            <div style="margin-bottom: 30px;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                    <span style="background: #ea580c; color: white; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; font-size: 14px;">1</span>
+                    <p style="font-weight: 600; color: #334155; font-size: 15px; margin: 0;">Buksan ang Browser</p>
+                </div>
+                <p style="font-size: 13.5px; color: #475569; margin-bottom: 10px; padding-left: 32px;">Sa cellphone o laptop mo, buksan ang Google Chrome, Safari, o kung anong browser ang gamit mo. Sa address bar sa taas (yung kung saan mo tinatype ang facebook.com), i-type ang <strong>IP Address</strong> na tugma sa router model mo (Hal: 192.168.18.1) tapos i-enter.</p>
+                <img src="assets/router-step1.jpg" alt="Open IP Address in Browser" class="placeholder-img" style="margin-top: 5px;">
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                    <span style="background: #ea580c; color: white; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; font-size: 14px;">2</span>
+                    <p style="font-weight: 600; color: #334155; font-size: 15px; margin: 0;">Mag-Login sa Router Page</p>
+                </div>
+                <p style="font-size: 13.5px; color: #475569; margin-bottom: 10px; padding-left: 32px;">Makikita mo ang login screen ng Huawei router page. Ilagay ang iyong default <strong>Username</strong> at <strong>Password</strong> galing sa default details card sa taas.</p>
+                <img src="assets/router-step2.jpg" alt="Login with Default Credentials" class="placeholder-img" style="margin-top: 5px;">
+            </div>
+
+            <div style="margin-bottom: 30px;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                    <span style="background: #ea580c; color: white; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; font-size: 14px;">3</span>
+                    <p style="font-weight: 600; color: #334155; font-size: 15px; margin: 0;">Hanapin ang WiFi Configuration</p>
+                </div>
+                <p style="font-size: 13.5px; color: #475569; margin-bottom: 10px; padding-left: 32px;">Pagkatapos makapag-login, makikita mo na ang main page (Dashboard). Hanapin mo yung menu na may WiFi signal waves icon na may nakasulat na <strong>'Wi-Fi configuration'</strong>. I-click mo 'yun para pumunta sa setting.</p>
+                <img src="assets/router-step3.png" alt="Navigate to Wi-Fi Configuration" class="placeholder-img" style="margin-top: 5px;">
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                    <span style="background: #ea580c; color: white; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; font-size: 14px;">4</span>
+                    <p style="font-weight: 600; color: #334155; font-size: 15px; margin: 0;">I-set ang Bagong Password at I-Save</p>
+                </div>
+                <p style="font-size: 13.5px; color: #475569; margin-bottom: 10px; padding-left: 32px;">Pumunta ka sa part ng <strong>'Password'</strong>. Burahin mo yung lumang password at i-type mo na yung gusto mong bagong password. (Make sure na unique at mahirap hulaan!).</p>
+                <p style="font-size: 13.5px; color: #475569; padding-left: 32px; font-style: italic;">Note: Kung may 2.4G at 5G setup ka (gaya nung nasa picture), pwedeng gawing magkapareho na lang ang password nila para hindi malito.</p>
+                <p style="font-size: 13.5px; color: #475569; margin-top: 8px; padding-left: 32px; font-weight: 500;">Kapag ok na, i-click ang blue na <strong>'Save'</strong> button sa ibaba.</p>
+                <img src="assets/router-step4.jpg" alt="Enter new password and Save" class="placeholder-img" style="margin-top: 5px;">
+            </div>
+            
+            <p style="font-size: 12.5px; color: #ea580c; font-weight: 500; font-style: italic; background: #fff7ed; padding: 10px; border-radius: 8px; border: 1px dashed #fdba74;">
+                <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: middle;">check_circle</span> 
+                Automatic na madidisconnect ang cellphone mo pagkatapos mong i-save. I-reconnect mo lang ulit ang device mo gamit ang ginawa mong bagong password.
+            </p>
+        </div>
+
+        <div id="report" class="content-section">
+            <button class="back-btn" onclick="goBack()">
+                <span class="material-symbols-rounded">arrow_back</span> Back to Menu
+            </button>
+            <h2>Report an Issue / Payment</h2>
+            
+            <div class="card warning-card" style="margin-bottom: 20px;">
+                <div class="warning-header">
+                    <span class="material-symbols-rounded">warning</span>
+                    <strong>Bago mag-report, please check:</strong>
+                </div>
+                <ul class="custom-list">
+                    <li><strong>Red LOS:</strong> Paki-check kung may nabaluktot na kable.</li>
+                    <li><strong>No Internet:</strong> Patayin ang modem (bunutin sa saksakan), wait 5 minutes, then turn it on again.</li>
+                </ul>
+            </div>
+
+            <p style="font-size: 14px; color: #475569; margin-bottom: 15px;">Kung may report ka tungkol sa connection o nagbayad ka at magse-send ng proof of payment, i-send ito direct sa technical team natin:</p>
+
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
+                <a href="https://www.facebook.com/share/1D3qwgXH6S/" target="_blank" class="submit-btn" style="text-decoration: none; background: #1877F2; text-align: center;">
+                    <span class="material-symbols-rounded">chat</span> I-send via Messenger
+                </a>
+                
+                <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 14px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                    <span style="font-size: 13px; color: #475569;">O i-send via Email sa:</span>
+                    <strong style="color: #ea4335; font-size: 16px; display: flex; align-items: center; gap: 6px; user-select: all;">
+                        <span class="material-symbols-rounded">mail</span> support@cheetah.com.ph
+                    </strong>
+                </div>
+            </div>
+
+            <div class="card" style="border: 2px solid #cbd5e1; background: #ffffff;">
+                <h3 style="color: #1e3a8a; font-size: 15px; margin-bottom: 8px;">Message Format Generator</h3>
+                <p style="font-size: 12px; color: #64748b; margin-bottom: 15px;">I-type ang details mo rito at i-click ang Copy. Pwede mo na itong i-paste sa Messenger o Email.</p>
+                
+                <div class="modern-form">
+                    <input type="text" id="repName" placeholder="Account Name (Hal: Juan Dela Cruz)">
+                    <input type="text" id="repAccNum" placeholder="Account Number">
+                    <input type="text" id="repMobile" placeholder="Mobile Number">
+                    <textarea id="repIssue" placeholder="Ano ang report o concern mo?" rows="3"></textarea>
+                    
+                    <button type="button" onclick="copyReport()" class="submit-btn" id="copyBtn" style="background: #3b82f6; margin-top: 5px;">
+                        <span class="material-symbols-rounded">content_copy</span> Copy Message
+                    </button>
+                    <p style="font-size: 11.5px; color: #ea580c; text-align: center; margin-top: 2px; font-weight: 500;">
+                        *Note: Copy and paste lang ang guide na ito, walang nase-save na info. Wag rin kalimutang mag-attach ng picture o video (kung meron) bago i-send sa chat!
+                    </p>
+                </div>
+            </div>
+
+            <h3 style="font-size: 16px; color: #c2410c; margin-top: 30px; margin-bottom: 10px;">Contact Numbers</h3>
+            <div class="card" style="background: #f8fafc;">
+                <p style="font-weight: 600; color: #334155; margin-bottom: 8px; display: flex; align-items: center; gap: 5px;">
+                    <span class="material-symbols-rounded" style="font-size: 18px;">support_agent</span> Hotlines:
+                </p>
+                <ul class="custom-list" style="margin-bottom: 20px; list-style-type: none; padding-left: 28px;">
+                    <li style="margin-bottom: 4px;">8652-5555</li>
+                    <li>8652-3654 to 55</li>
+                </ul>
+
+                <p style="font-weight: 600; color: #334155; margin-bottom: 8px; display: flex; align-items: center; gap: 5px;">
+                    <span class="material-symbols-rounded" style="font-size: 18px;">smartphone</span> Mobile:
+                </p>
+                <ul class="custom-list" style="list-style-type: none; padding-left: 28px;">
+                    <li style="margin-bottom: 4px;"><strong>Globe:</strong> 0917-329-9831</li>
+                    <li style="margin-bottom: 4px;"><strong>Smart:</strong> 0919-080-9868</li>
+                    <li><strong>Sun:</strong> 0925-321-3144</li>
+                </ul>
+            </div>
+        </div>
+
+<div id="opisina" class="content-section">
+            <button class="back-btn" onclick="goBack()">
+                <span class="material-symbols-rounded">arrow_back</span> Back to Menu
+            </button>
+            <h2>Listahan ng mga Opisina</h2>
+            <p style="font-size: 14px; color: #475569; margin-bottom: 15px;">Pwede kang bumisita at magbayad nang personal sa kahit saang branch sa ibaba. Hanapin ang pinakamalapit sa'yo:</p>
+
+            <div class="card" style="border-top: 4px solid #f97316;">
+                <h3 style="color: #c2410c; margin-bottom: 5px; font-size: 18px;">ANGONO</h3>
+                <p style="font-weight: 600; font-size: 13px; color: #1e3a8a; margin-bottom: 8px;">Skyline CATV Industries Inc.</p>
+                <p style="font-size: 13px; color: #475569; margin-bottom: 5px; line-height: 1.5;">
+                    <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: text-top; color: #ea580c;">location_on</span> 
+                    Unit 6 GF Lexar Bldg. M.L. Quezon Ave. cor Edenville St., Brgy. San Isidro, Angono, Rizal
+                </p>
+                <p style="font-size: 12px; font-weight: 500; color: #64748b; margin-bottom: 10px;">📍 Landmark: Across SM Angono</p>
+                <iframe src="https://maps.google.com/maps?q=Lexar+Angono&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="card" style="border-top: 4px solid #f97316;">
+                <h3 style="color: #c2410c; margin-bottom: 5px; font-size: 18px;">MORONG</h3>
+                <p style="font-weight: 600; font-size: 13px; color: #1e3a8a; margin-bottom: 8px;">Skyline CATV Industries Inc.</p>
+                <p style="font-size: 13px; color: #475569; margin-bottom: 5px; line-height: 1.5;">
+                    <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: text-top; color: #ea580c;">location_on</span> 
+                    Unit 9 Lexar Bldg. T. Claudio St. Paglabas San Pedro, Morong, Rizal
+                </p>
+                <p style="font-size: 12px; font-weight: 500; color: #64748b; margin-bottom: 10px;">📍 Landmark: Across Morong Municipal Bldg.</p>
+                <iframe src="https://maps.google.com/maps?q=Lexar+Morong&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="card" style="border-top: 4px solid #f97316;">
+                <h3 style="color: #c2410c; margin-bottom: 5px; font-size: 18px;">TANAY</h3>
+                <p style="font-weight: 600; font-size: 13px; color: #1e3a8a; margin-bottom: 8px;">Skyline CATV Industries Inc.</p>
+                <p style="font-size: 13px; color: #475569; margin-bottom: 10px; line-height: 1.5;">
+                    <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: text-top; color: #ea580c;">location_on</span> 
+                    GF Lexar Bldg. Sampaloc Road, Plaza Aldea, Tanay, Rizal
+                </p>
+                <iframe src="https://maps.google.com/maps?q=Lexar+Tanay&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="card" style="border-top: 4px solid #f97316;">
+                <h3 style="color: #c2410c; margin-bottom: 5px; font-size: 18px;">TERESA</h3>
+                <p style="font-weight: 600; font-size: 13px; color: #1e3a8a; margin-bottom: 8px;">Skyline CATV Industries Inc.</p>
+                <p style="font-size: 13px; color: #475569; margin-bottom: 10px; line-height: 1.5;">
+                    <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: text-top; color: #ea580c;">location_on</span> 
+                    GF Lexar Bldg. 21 Quezon Ave., Teresa, Rizal
+                </p>
+                <iframe src="https://maps.google.com/maps?q=Lexar+Teresa&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="card" style="border-top: 4px solid #f97316;">
+                <h3 style="color: #c2410c; margin-bottom: 5px; font-size: 18px;">BINANGONAN</h3>
+                <p style="font-weight: 600; font-size: 13px; color: #1e3a8a; margin-bottom: 8px;">Binangonan Cable TV</p>
+                <p style="font-size: 13px; color: #475569; margin-bottom: 10px; line-height: 1.5;">
+                    <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: text-top; color: #ea580c;">location_on</span> 
+                    2F Lexar Bldg. 012 Manila East Road, Sitio San Juan, Brgy. Calumpang, Binangonan, Rizal
+                </p>
+                <iframe src="https://maps.google.com/maps?q=Lexar+Binangonan&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="card" style="border-top: 4px solid #f97316;">
+                <h3 style="color: #c2410c; margin-bottom: 5px; font-size: 18px;">TAYTAY</h3>
+                <p style="font-weight: 600; font-size: 13px; color: #1e3a8a; margin-bottom: 8px;">Kabayan Cable Corporation</p>
+                <p style="font-size: 13px; color: #475569; margin-bottom: 5px; line-height: 1.5;">
+                    <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: text-top; color: #ea580c;">location_on</span> 
+                    2F Lexar Bldg. Manila East Rd, Brgy. Dolores, Taytay, Rizal
+                </p>
+                <p style="font-size: 12px; font-weight: 500; color: #64748b; margin-bottom: 10px;">📍 Landmark: Beside SM Taytay</p>
+                <iframe src="https://maps.google.com/maps?q=Lexar+Taytay&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="card warning-card" style="border-left-color: #f97316; background: #fff7ed; margin-top: 20px;">
+                <p style="margin: 0; color: #c2410c; font-size: 13px;">
+                    <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: middle;">info</span>
+                    <strong>Paalala:</strong> Magbayad on or before the due date para maiwasan ang service interruptions!
+                </p>
+            </div>
+        </div>
+
+ <div id="terms" class="content-section">
+            <button class="back-btn" onclick="goBack()">
+                <span class="material-symbols-rounded">arrow_back</span> Back to Menu
+            </button>
+            <h2>Contract Terms Summary</h2>
+            <p style="font-size: 13.5px; color: #475569; margin-bottom: 15px;">Ito ang summary ng mga mahahalagang detalye sa iyong contract. Applicable ito sa lahat ng Cheetah Broadband plans:</p>
+
+            <div class="terms-box" style="height: auto; max-height: 500px; padding: 20px;">
+                
+                <p style="font-weight: 600; color: #c2410c; font-size: 14.5px; margin-bottom: 8px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle; font-size: 18px;">lock</span> Payment & Lock-in Period
+                </p>
+                <ul class="custom-list" style="margin-bottom: 20px;">
+                    <li>Babayaran upon installation ang halagang katumbas ng <strong>one (1) month</strong> ng napili mong plan.</li>
+                    <li>Ito ay magsisilbing <strong>Security Deposit</strong> na magagamit (consumable) sa pinakadulo ng iyong kontrata.</li>
+                    <li>Ang lahat ng plans ay may <strong>24-month lock-in period</strong> (2 years).</li>
+                </ul>
+
+                <p style="font-weight: 600; color: #c2410c; font-size: 14.5px; margin-bottom: 8px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle; font-size: 18px;">cancel</span> Disconnection & Pre-Termination
+                </p>
+                <ul class="custom-list" style="margin-bottom: 20px;">
+                    <li><strong>Pre-termination Fee:</strong> May penalty na <strong>₱5,000</strong> kung ipapaputol ang internet bago matapos ang 2 years, at forfeited (hindi na maibabalik) ang 1-month deposit.</li>
+                    <li><strong>Voluntary Disconnection:</strong> Kailangan mag-submit ng written request sa branch at least 30 days bago ang gusto mong cut-off. Priority ito kung fully paid ka at walang outstanding balance. Kung walang request, magtutuloy-tuloy ang bill mo.</li>
+                    <li><strong>Deactivation:</strong> Temporary deactivation ng connection tuwing <strong>16th ng buwan</strong> kapag hindi nakapagbayad.</li>
+                    <li><strong>Equipment:</strong> Kailangang ibalik ang modem/router (ONU) at cable box (STB) in good condition kapag na-terminate ang service.</li>
+                </ul>
+
+                <p style="font-weight: 600; color: #c2410c; font-size: 14.5px; margin-bottom: 8px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle; font-size: 18px;">move_up</span> Changes & Transfer of Address
+                </p>
+                <ul class="custom-list" style="margin-bottom: 20px;">
+                    <li><strong>Change Plan:</strong> May <strong>₱500 fee</strong> para sa upgrade o downgrade habang nasa lock-in period. Kung tapos na ang lock-in, free na ito pero magkakaroon ng panibagong 24-month lock-in contract.</li>
+                    <li><strong>Relocation:</strong> Pwedeng ilipat ang linya sa bagong bahay pero kailangang i-process sa branch. May transfer fee na <strong>₱1,000</strong> kung nasa lock-in period pa.</li>
+                </ul>
+
+                <p style="font-weight: 600; color: #c2410c; font-size: 14.5px; margin-bottom: 8px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle; font-size: 18px;">construction</span> Materials & Installation
+                </p>
+                <ul class="custom-list" style="margin-bottom: 20px;">
+                    <li><strong>Outdoor Fiber:</strong> Free hanggang 120 meters. Kapag umabot ng 200m (₱700) at kapag 300m (₱1,000).</li>
+                    <li><strong>Indoor Fiber:</strong> Free hanggang 15 meters. May charge na ₱10/meter kapag sumobra.</li>
+                    <li><strong>Clamps:</strong> Free 6 pcs. Kapag sumobra, ₱40/each.</li>
+                    <li>Ang bayad sa excess materials ay idadagdag sa bill at payable within 2 months.</li>
+                </ul>
+
+                <p style="font-weight: 600; color: #c2410c; font-size: 14.5px; margin-bottom: 8px;">
+                    <span class="material-symbols-rounded" style="vertical-align: middle; font-size: 18px;">receipt_long</span> Billing Summary
+                </p>
+                <ul class="custom-list" style="margin-bottom: 10px;">
+                    <li>Ang first bill mo ay <strong>Pro-rated</strong> (compute lang kung ilang araw nagamit sa unang buwan).</li>
+                    <li><strong>Due Date:</strong> Every 30th o 31st ng buwan.</li>
+                    <li>Pagkatapos ng first bill, ang babayaran mo na sa mga susunod na buwan ay ang eksaktong halaga ng iyong plan (Fixed Monthly Recurring Charge).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
