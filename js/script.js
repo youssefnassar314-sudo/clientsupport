@@ -463,3 +463,20 @@ function copyReport() {
         alert("Hindi ma-copy ang text sa device mo. Paki-type na lang manually sa Messenger.");
     });
 }
+
+// TOGGLE AI CHATBOT WINDOW
+function toggleChat() {
+    var chatBox = document.getElementById('chatWidget');
+    var toggleBtn = document.getElementById('chatToggleBtn');
+    var icon = toggleBtn.querySelector('.material-symbols-rounded');
+
+    if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+        chatBox.style.display = 'block';
+        icon.textContent = 'expand_more'; 
+        toggleBtn.style.background = '#475569'; 
+    } else {
+        chatBox.style.display = 'none';
+        icon.textContent = 'chat'; 
+        toggleBtn.style.background = '#ea580c'; 
+    }
+}
