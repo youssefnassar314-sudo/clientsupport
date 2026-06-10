@@ -596,18 +596,26 @@
                 </ul>
             </div>
              <!-- Cheetah Broadband AI Chatbot Widget -->
-    <div style="position: fixed; bottom: 20px; right: 20px; width: 380px; height: 520px; z-index: 9999; border-radius: 16px; overflow: hidden; box-shadow: 0px 8px 24px rgba(0,0,0,0.15); background: white; border: 1px solid #e2e8f0;">
-        <div style="background: #ea580c; color: white; padding: 12px 16px; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+<button id="chatToggleBtn" onclick="toggleChat()" style="position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; background: #ea580c; color: white; border: none; box-shadow: 0px 4px 16px rgba(0,0,0,0.25); cursor: pointer; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease;">
+    <span class="material-symbols-rounded" style="font-size: 28px;">chat</span>
+</button>
+
+<div id="chatWidget" style="display: none; position: fixed; bottom: 95px; right: 20px; width: 380px; height: 520px; z-index: 9999; border-radius: 16px; overflow: hidden; box-shadow: 0px 8px 32px rgba(0,0,0,0.2); background: white; border: 1px solid #e2e8f0;">
+    <div style="background: #ea580c; color: white; padding: 14px 16px; font-weight: 600; font-family: 'Poppins', sans-serif; font-size: 14px; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 8px;">
             <span class="material-symbols-rounded" style="font-size: 20px;">support_agent</span>
             Cheetah Support AI
         </div>
-        <iframe 
-            src="https://youssefnassar314-cheetah-broadband-bot.hf.space" 
-            frameborder="0" 
-            width="100%" 
-            height="calc(100% - 45px)">
-        </iframe>
+        <span class="material-symbols-rounded" onclick="toggleChat()" style="cursor: pointer; font-size: 20px; padding: 2px;">close</span>
     </div>
+
+    <iframe 
+        src="https://youssefnassar314-cheetah-broadband-bot.hf.space" 
+        frameborder="0" 
+        width="100%" 
+        height="calc(100% - 48px)">
+    </iframe>
+</div>
         </div>
     </div>
 
