@@ -29,6 +29,14 @@
     <div class="container">
         <!-- MAIN MENU -->
         <div id="mainMenu" class="menu-grid">
+
+            <button class="menu-btn" onclick="showSection('register')">
+                <div class="btn-left">
+                    <span class="material-symbols-rounded icon-blue">how_to_reg</span>
+                    <span class="btn-text">Paano Mag-register sa App</span>
+                </div>
+                <span class="material-symbols-rounded arrow">chevron_right</span>
+            </button>
             
             <button class="menu-btn" onclick="showSection('enroll')">
                 <div class="btn-left">
@@ -89,6 +97,45 @@
         </div>
 
         <!-- SECTIONS -->
+
+        <div id="register" class="content-section">
+            <button class="back-btn" onclick="goBack()">
+                <span class="material-symbols-rounded">arrow_back</span> Back to Menu
+            </button>
+            <h2>Pag-register sa Cheetah Broadband App</h2>
+
+            <div class="card">
+                <h3 style="color: #ea580c; font-size: 16px; margin-bottom: 8px;">Para kanino ito?</h3>
+                <p style="margin-bottom: 0;">Ang guide na ito ay para sa mga <strong>existing subscribers</strong> na gustong mag-register sa Cheetah Broadband App. Dito mo madaling makikita ang iyong E-SOA at pwede ka pang magbayad direkta sa app!</p>
+            </div>
+
+            <p>Sundin ang steps sa ibaba para makapag-register:</p>
+
+            <a href="https://www.cheetahbroadband.app/" target="_blank" class="submit-btn" style="text-decoration: none; display: inline-flex; width: 100%; margin: 15px 0;">
+                <span class="material-symbols-rounded">open_in_new</span> Pumunta sa Cheetah Broadband App
+            </a>
+
+            <div class="card">
+                <ol class="custom-list">
+                    <li>Sa website, hanapin at pindutin ang button na <strong>“Existing subscriber? Register here.”</strong></li>
+                    <li>I-type ang iyong <strong>Account Number</strong>. Kadalasan itong makikita sa opisyal na papel na ibinigay sa iyo noong araw ng installation.</li>
+                    <li>Pagkatapos ilagay ang account number, pindutin ang <strong>“Get Invite Link.”</strong></li>
+                    <li>Buksan ang <strong>email address</strong> na ginamit mo noong ikaw ay nag-apply. Dito ipapadala ng system ang iyong natatanging invite link.</li>
+                    <li>Sa loob ng natanggap na email, hanapin at pindutin ang <strong>“Accept Invitation.”</strong></li>
+                    <li>Pag-click sa imbitasyon, ididirekta ka sa isang pahina para gumawa ng <strong>password</strong>. Ilagay ang password na gusto mong gamitin at siguraduhing madali mo itong matatandaan.</li>
+                    <li>Kapag nai-set up na ang password, maaari mo na itong gamitin upang tuluyang <strong>mag-login</strong> sa iyong Cheetah Broadband App account.</li>
+                </ol>
+                <p style="font-size: 13px; color: #ea580c; margin-top: 15px; margin-bottom: 0; font-weight: 500;">
+                    <span class="material-symbols-rounded" style="font-size: 16px; vertical-align: middle;">check_circle</span> 
+                    Sa loob ng app, madali mo nang makikita ang iyong E-SOA at mga invoice mula sa iyong mga nakaraang transaksyon.
+                </p>
+            </div>
+
+            <div class="card warning-card" style="border-left-color: #3b82f6; background: #eff6ff;">
+                <p style="margin: 0; color: #1e3a8a;"><strong>Pwede rin bang magbayad gamit ang app?</strong><br>
+                Oo! Maaari kang magbayad nang direkta gamit ang app. May kaunting convenience fee na idadagdag, ngunit real-time na magre-reflect ang iyong ibinayad sa system para iwas-abala.</p>
+            </div>
+        </div>
         
 <div id="enroll" class="content-section">
             <button class="back-btn" onclick="goBack()">
